@@ -218,7 +218,7 @@ const AboutMe = () => {
         files and use them in <A href="https://nextjs.org">Next.js</A>.
       </P>
       <H2>
-        <A href="https://github.com/j3ygh/ctdb">CTDB</A>
+        <A href="https://github.com/j3ygh/ctdb">ctdb</A>
       </H2>
       <div className="mb-8">
         <Image
