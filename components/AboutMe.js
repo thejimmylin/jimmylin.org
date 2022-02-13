@@ -220,6 +220,7 @@ const AboutMe = () => {
       <H2>
         <A href="https://github.com/j3ygh/ctdb">ctdb</A>
       </H2>
+      <P>A web UI of many reusable applications, mainly built with Django.</P>
       <div className="mb-8">
         <Image
           src={ctdbLogin}

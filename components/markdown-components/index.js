@@ -1,30 +1,30 @@
 import PreDark from "./PreDark";
 import PreLight from "./PreLight";
 
-const P = ({ children }) => <p className="mb-5">{children}</p>;
+const P = ({ children }) => <p className="my-5 first:mt-0 last:mb-0">{children}</p>;
 
 const H1 = ({ children }) => (
-  <h1 className="text-4xl font-semibold mb-8">{children}</h1>
+  <h1 className="text-4xl font-semibold my-8 first:mt-0 last:mb-0">{children}</h1>
 );
 
 const H2 = ({ children }) => (
-  <h2 className="text-2xl font-semibold mb-8">{children}</h2>
+  <h2 className="text-2xl font-semibold my-8 first:mt-0 last:mb-0">{children}</h2>
 );
 
 const H3 = ({ children }) => (
-  <h3 className="text-lg font-semibold mb-8">{children}</h3>
+  <h3 className="text-lg font-semibold my-8 first:mt-0 last:mb-0">{children}</h3>
 );
 
 const Ol = ({ children }) => <ol className="list-decimal">{children}</ol>;
 
 const Ul = ({ children }) => <ul className="list-disc">{children}</ul>;
 
-const Li = ({ children }) => <li className="mb-5">{children}</li>;
+const Li = ({ children }) => <li className="my-5 first:mt-0 last:mb-0">{children}</li>;
 
 const Blockquote = ({ children }) => {
   return (
     <div className="relative">
-      <blockquote className="text-sm italic bg-paper-light dark:bg-night-light shadow-sm rounded-sm pt-6 px-5 pb-1 mb-5">
+      <blockquote className="text-sm italic bg-paper-light dark:bg-night-light shadow-sm rounded-sm pt-6 px-5 pb-1 my-5 first:mt-0 last:mb-0">
         <span className="text-3xl text-pencil dark:text-moonlight select-none absolute top-0 left-0 transform -translate-y-1/4">
           “
         </span>
@@ -35,7 +35,7 @@ const Blockquote = ({ children }) => {
 };
 
 const Table = ({ children }) => (
-  <div className="overflow-x-scroll mb-8 shadow-sm">
+  <div className="overflow-x-scroll shadow-sm my-8 first:mt-0 last:mb-0">
     <table className="text-sm bg-paper-light dark:bg-night-light min-w-full whitespace-nowrap">
       {children}
     </table>
