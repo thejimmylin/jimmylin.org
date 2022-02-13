@@ -24,7 +24,7 @@ const Li = ({ children }) => <li className="my-5 first:mt-0 last:mb-0">{children
 const Blockquote = ({ children }) => {
   return (
     <div className="relative">
-      <blockquote className="text-sm italic bg-paper-light dark:bg-night-light shadow-sm rounded-sm pt-6 px-5 pb-1 my-5 first:mt-0 last:mb-0">
+      <blockquote className="text-sm italic bg-paper-light dark:bg-night-light shadow-sm rounded-sm p-5 pt-1 my-5">
         <span className="text-3xl text-pencil dark:text-moonlight select-none absolute top-0 left-0 transform -translate-y-1/4">
           “
         </span>
