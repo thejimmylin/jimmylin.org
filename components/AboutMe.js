@@ -5,8 +5,8 @@ import avatar from "../public/static/avatar-1440x1440.jpg";
 import ntu from "../public/static/ntu-360x360.png";
 import chief from "../public/static/chief-360x360.png";
 import shopee from "../public/static/shopee-360x360.png";
-import j3yIndex from "../public/static/j3y-index-1920x1029.png";
-import j3yPost1 from "../public/static/j3y-post1-1920x1029.png";
+import jimmylinOrgIndex from "../public/static/jimmylin-org-index-1920x1029.png";
+import jimmylinOrgPost from "../public/static/jimmylin-org-post1-1920x1029.png";
 import ctdbLogin from "../public/static/ctdb-login-1920x1029.png";
 import ctdbReminder from "../public/static/ctdb-reminder-1920x1029.png";
 import ctdbDiaryI18n from "../public/static/ctdb-diary-i18n-1920x1029.png";
@@ -185,13 +185,13 @@ const AboutMe = () => {
       </P>
       <H1>Portfolios</H1>
       <H2>
-        <A href="https://github.com/j3ygh/j3y">J3Y</A>
+        <A href="https://github.com/j3ygh/jimmylin.org">jimmylin.org</A>
       </H2>
       <P>My personal blog, mainly built with Next.js.</P>
       <div className="mb-8">
         <Image
-          src={j3yIndex}
-          alt={j3yIndex}
+          src={jimmylinOrgIndex}
+          alt={jimmylinOrgIndex}
           className="rounded-lg"
           priority={true}
         />
@@ -202,8 +202,8 @@ const AboutMe = () => {
       </div>
       <div className="mb-8">
         <Image
-          src={j3yPost1}
-          alt={j3yPost1}
+          src={jimmylinOrgPost}
+          alt={jimmylinOrgPost}
           className="rounded-lg"
           priority={true}
         />
