@@ -3,7 +3,7 @@ import Image from "next/image";
 import { P, H1, H2, A } from "./markdown-components";
 import avatar from "../public/static/avatar-1440x1440.jpg";
 import ntu from "../public/static/ntu-360x360.png";
-import chief from "../public/static/chief-450x200.png";
+import chief from "../public/static/chief-360x360.png";
 import shopee from "../public/static/shopee-360x360.png";
 import j3yIndex from "../public/static/j3y-index-1920x1029.png";
 import j3yPost1 from "../public/static/j3y-post1-1920x1029.png";
