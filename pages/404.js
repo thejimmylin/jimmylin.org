@@ -1,10 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MainLayout from "../components/MainLayout";
 import PostLayout from "../components/PostLayout";
-import iAmSorry from "../public/static/i-am-sorry-1920x1440.jpg";
 import { H1, P } from "../components/markdown-components";
 
 const Custom404 = ({ useIsDark }) => {
@@ -13,10 +11,8 @@ const Custom404 = ({ useIsDark }) => {
       <Header useIsDark={useIsDark} />
       <MainLayout>
         <PostLayout>
+          <div className="text-[128px]">404</div>
           <H1>Sorry, no pages found.</H1>
-          <div className="mb-5">
-            <Image className="rounded-sm" src={iAmSorry} alt="i-am-sorry" priority={true} />
-          </div>
           <P>
             Maybe you want to go back to the{" "}
             <span className="text-blue-600 hover:text-blue-700 dark:text-yellow-400 dark:hover:text-yellow-300">
