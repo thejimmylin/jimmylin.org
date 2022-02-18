@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MainLayout from "../components/MainLayout";
 import SearchBar from "../components/SearchBar";
-import PostsDetailed from "../components/PostsDetailed";
+import PostCovers from "../components/PostCovers";
 import { getAllPostOutlines, sortPostOutlines } from "../markdowns/posts";
 
 const Posts = ({ useIsDark, postOutlines }) => {
@@ -15,7 +15,7 @@ const Posts = ({ useIsDark, postOutlines }) => {
       <Header useIsDark={useIsDark} />
       <MainLayout>
         <SearchBar useTextSearch={useTextSearch} />
-        <PostsDetailed
+        <PostCovers
           isDark={isDark}
           postOutlines={postOutlines}
           textSearched={textSearched}
