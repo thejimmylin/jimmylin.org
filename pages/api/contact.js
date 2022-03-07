@@ -5,7 +5,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const handler = async (req, res) => {
   if (req.method == "POST") {
     const { email, message } = req.body;
-    const sgMail = {
+    const mailData = {
       to: "b00502013@gmail.com",
       from: "notifications@jimmylin.org",
       subject: `${email} wants to contact you!`,
@@ -13,7 +13,7 @@ const handler = async (req, res) => {
       html: `<p>${email}: ${message}<p/>`,
     };
     try {
-      await sgMail.send(mail);
+      await sgMail.send(mailData);
       res.status(200).end();
     } catch (error) {
       const message = `Email is not sent because of ${error}.`;
