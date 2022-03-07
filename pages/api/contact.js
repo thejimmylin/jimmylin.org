@@ -1,22 +1,19 @@
 import sgMail from "@sendgrid/mail";
 
-const MY_EMAIL = "b00502013@gmail.com";
-const SENT_FROM = "notifications@jimmylin.org";
-
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const handler = async (req, res) => {
   if (req.method == "POST") {
     const { email, message } = req.body;
-    const msg = {
-      to: MY_EMAIL,
-      from: SENT_FROM,
+    const sgMail = {
+      to: "b00502013@gmail.com",
+      from: "notifications@jimmylin.org",
       subject: `${email} wants to contact you!`,
       text: `${email}: ${message}`,
       html: `<p>${email}: ${message}<p/>`,
     };
     try {
-      await sgMail.send(msg);
+      await sgMail.send(mail);
       res.status(200).end();
     } catch (error) {
       const message = `Email is not sent because of ${error}.`;
