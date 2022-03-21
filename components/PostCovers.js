@@ -94,7 +94,6 @@ const PostCovers = ({ postOutlines, textSearched }) => {
     const title = post?.frontmatter?.title || "";
     return title.toLowerCase().includes(textSearched.toLowerCase());
   });
-  console.log(relatedPosts.len);
   if (relatedPosts.length === 0) {
     return <SorryNoPostCover />;
   } else {
