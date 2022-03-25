@@ -1,12 +1,12 @@
 const SearchBar = ({ useTextSearch }) => {
   const [textSearched, setTextSearched] = useTextSearch;
   return (
-    <div className="flex items-center max-w-xs bg-paper-light dark:bg-night-light transition-bg p-4 shadow-sm rounded-md">
-      <span className="text-pencil dark:text-moonlight mx-4">
+    <div className="flex max-w-xs items-center rounded-md bg-paper-light p-4 shadow-sm transition-bg dark:bg-night-light">
+      <span className="mx-4 text-pencil dark:text-moonlight">
         <i className="bi bi-search"></i>
       </span>
       <input
-        className="text-xl text-ink dark:text-light bg-paper-light dark:bg-night-light transition-bg placeholder-pencil dark:placeholder-moonlight w-full outline-none"
+        className="w-full bg-paper-light text-xl text-ink placeholder-pencil outline-none transition-bg dark:bg-night-light dark:text-light dark:placeholder-moonlight"
         value={textSearched}
         onChange={(e) => setTextSearched(e.target.value)}
         placeholder="Search"

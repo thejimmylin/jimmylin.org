@@ -9,13 +9,13 @@ const LightFilter = ({ useIsDark, windowScrollY }) => {
   return (
     <>
       <div
-        className="absolute w-full h-screen bg-night"
+        className="absolute h-screen w-full bg-night"
         style={{
           opacity: isDark ? "40%" : "30%",
         }}
       ></div>
       <div
-        className="absolute w-full h-screen bg-night"
+        className="absolute h-screen w-full bg-night"
         style={{
           opacity: `${(windowScrollY / innerHeight) * 100}%`,
         }}

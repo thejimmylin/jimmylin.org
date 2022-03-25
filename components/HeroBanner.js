@@ -14,7 +14,7 @@ const HeroBanner = ({ useIsDark, windowScrollY, headerRef }) => {
     <header className="relative h-screen font-sans">
       <LightFilter useIsDark={useIsDark} windowScrollY={windowScrollY} />
       <div
-        className="absolute w-full h-screen -z-10 bg-night"
+        className="absolute -z-10 h-screen w-full bg-night"
         style={{ transform: `translateY(${windowScrollY / 2}px)` }}
       >
         <div
@@ -39,8 +39,8 @@ const HeroBanner = ({ useIsDark, windowScrollY, headerRef }) => {
           />
         </div>
       </div>
-      <div className="absolute flex flex-col items-center transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-2/5">
-        <p className="mb-4 text-4xl xs:text-5xl sm:text-6xl font-semibold text-light text-center whitespace-nowrap">
+      <div className="absolute left-1/2 top-2/5 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center">
+        <p className="xs:text-5xl mb-4 whitespace-nowrap text-center text-4xl font-semibold text-light sm:text-6xl">
           <span className="animate-fadein-1000-0">I</span>
           <span className="animate-fadein-1000-50">&apos;</span>
           <span className="animate-fadein-1000-100">m</span>
@@ -61,21 +61,21 @@ const HeroBanner = ({ useIsDark, windowScrollY, headerRef }) => {
         </p>
         <div className="flex">
           <Link href="/posts">
-            <a className="flex items-center justify-center w-32 h-12 m-1 bg-light hover:bg-white animate-fadein-1000-900">
+            <a className="m-1 flex h-12 w-32 animate-fadein-1000-900 items-center justify-center bg-light hover:bg-white">
               My posts
             </a>
           </Link>
           <Link href="/contact" passHref>
-            <button className="w-32 h-12 m-1 border-2 focus:outline-none text-light hover:text-white border-light hover:border-white text-md animate-fadein-1000-800">
+            <button className="text-md m-1 h-12 w-32 animate-fadein-1000-800 border-2 border-light text-light hover:border-white hover:text-white focus:outline-none">
               Contact
             </button>
           </Link>
         </div>
       </div>
-      <div className="absolute flex flex-col items-center transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-4/5">
+      <div className="absolute left-1/2 top-4/5 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center">
         <span
           onClick={scrollIntoHeader}
-          className="text-light text-2xl hover:text-white cursor-pointer animate-fadein-1000-900 transform hover:translate-y-0.5"
+          className="transform animate-fadein-1000-900 cursor-pointer text-2xl text-light hover:translate-y-0.5 hover:text-white"
         >
           <i className="bi bi-chevron-compact-down"></i>
         </span>

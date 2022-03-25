@@ -1,7 +1,9 @@
 const PostLayout = ({ children }) => {
   return (
     <>
-      <article className="prose dark:prose-dark max-w-none p-8">{children}</article>
+      <article className="prose dark:prose-dark max-w-none p-8">
+        {children}
+      </article>
     </>
   );
 };

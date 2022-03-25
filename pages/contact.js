@@ -10,16 +10,16 @@ const EmailInstruction = ({ value, emailEdited }) => {
     return null;
   }
   if (!value) {
-    return <div className="text-red-500 text-xs">Please provide an email.</div>;
+    return <div className="text-xs text-red-500">Please provide an email.</div>;
   }
   const emailPattern = /^\S+@\S+\.\S+$/;
   const isEmail = emailPattern.test(value);
   if (!isEmail) {
     return (
-      <div className="text-red-500 text-xs">Please provide a valid email.</div>
+      <div className="text-xs text-red-500">Please provide a valid email.</div>
     );
   }
-  return <div className="text-green-500 text-xs">Good!</div>;
+  return <div className="text-xs text-green-500">Good!</div>;
 };
 
 const MessageInstruction = ({ value, messageEdited }) => {
@@ -28,10 +28,10 @@ const MessageInstruction = ({ value, messageEdited }) => {
   }
   if (!value) {
     return (
-      <div className="text-red-500 text-xs">Please provide some messages.</div>
+      <div className="text-xs text-red-500">Please provide some messages.</div>
     );
   }
-  return <div className="text-green-500 text-xs">Good!</div>;
+  return <div className="text-xs text-green-500">Good!</div>;
 };
 
 const SubmitInstruction = ({ isSent, setIsSent }) => {
@@ -40,7 +40,7 @@ const SubmitInstruction = ({ isSent, setIsSent }) => {
       setIsSent(false);
     }, 1500);
     return (
-      <div className="text-green-500 text-xs opacity-100 animate-fadeout-1500-0">
+      <div className="animate-fadeout-1500-0 text-xs text-green-500 opacity-100">
         Successfully sent!
       </div>
     );
@@ -90,7 +90,7 @@ const Contact = ({ useIsDark }) => {
                   <input
                     type="email"
                     placeholder="Email"
-                    className="placeholder-moonlight dark:placeholder-pencil bg-paper-light dark:bg-night-light transition-bg outline-none w-full py-2 px-4"
+                    className="w-full bg-paper-light py-2 px-4 placeholder-moonlight outline-none transition-bg dark:bg-night-light dark:placeholder-pencil"
                     value={email}
                     onChange={(e) => {
                       setEmailEdited(true);
@@ -103,19 +103,22 @@ const Contact = ({ useIsDark }) => {
                   <textarea
                     rows="8"
                     placeholder="Message"
-                    className="placeholder-moonlight dark:placeholder-pencil bg-paper-light dark:bg-night-light transition-bg outline-none block w-full py-2 px-4"
+                    className="block w-full bg-paper-light py-2 px-4 placeholder-moonlight outline-none transition-bg dark:bg-night-light dark:placeholder-pencil"
                     value={message}
                     onChange={(e) => {
                       setMessageEdited(true);
                       setMessage(e.target.value);
                     }}
                   />
-                  <MessageInstruction value={message} messageEdited={messageEdited} />
+                  <MessageInstruction
+                    value={message}
+                    messageEdited={messageEdited}
+                  />
                 </div>
                 <div>
                   <button
                     type="submit"
-                    className="text-ink bg-paper-light dark:text-light dark:bg-night-light outline-none py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-bg w-full"
+                    className="w-full bg-paper-light py-2 px-4 text-ink outline-none transition-bg hover:bg-gray-100 dark:bg-night-light dark:text-light dark:hover:bg-gray-800"
                   >
                     Submit
                   </button>
@@ -123,7 +126,7 @@ const Contact = ({ useIsDark }) => {
                 </div>
                 <div>
                   <button
-                    className="text-ink bg-paper-light dark:text-light dark:bg-night-light outline-none py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-bg w-full"
+                    className="w-full bg-paper-light py-2 px-4 text-ink outline-none transition-bg hover:bg-gray-100 dark:bg-night-light dark:text-light dark:hover:bg-gray-800"
                     onClick={() => {
                       setEmail("");
                       setMessage("");

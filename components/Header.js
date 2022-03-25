@@ -30,10 +30,12 @@ const Header = ({ useIsDark, headerRef }) => {
   const contactClassName = classNames(
     "animate-fadein-1000-1000 font-semibold text-sm xs:text-lg hover:text-blue-700 dark:hover:text-yellow-300",
     {
-      "text-blue-700 dark:text-yellow-300": router.asPath.startsWith("/contact"),
+      "text-blue-700 dark:text-yellow-300":
+        router.asPath.startsWith("/contact"),
     },
     {
-      "text-blue-600 dark:text-yellow-400": !router.asPath.startsWith("/contact"),
+      "text-blue-600 dark:text-yellow-400":
+        !router.asPath.startsWith("/contact"),
     }
   );
 
@@ -41,9 +43,9 @@ const Header = ({ useIsDark, headerRef }) => {
     <>
       <ObservedDiv setIsIntersecting={setIsIntersecting} />
       <header className={headerClassName} ref={headerRef}>
-        <div className="max-w-screen-lg mx-auto">
-          <ul className="whitespace-nowrap flex justify-between items-baseline gap-4 px-8">
-            <li className="font-semibold text-lg xs:text-2xl hover:text-black dark:hover:text-white select-none">
+        <div className="mx-auto max-w-screen-lg">
+          <ul className="flex items-baseline justify-between gap-4 whitespace-nowrap px-8">
+            <li className="xs:text-2xl select-none text-lg font-semibold hover:text-black dark:hover:text-white">
               <Brand />
             </li>
             <li className={postsClassName}>
@@ -56,7 +58,7 @@ const Header = ({ useIsDark, headerRef }) => {
                 <a>Contact</a>
               </Link>
             </li>
-            <li className="flex items-center my-5 ml-auto">
+            <li className="my-5 ml-auto flex items-center">
               <DarkModeToggler useIsDark={useIsDark} />
             </li>
           </ul>

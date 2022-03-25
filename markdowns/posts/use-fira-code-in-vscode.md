@@ -25,13 +25,14 @@ To use it with VSCode, you need to:
    ```cmd
    choco install firacode
    ```
+
 2. After installing it, you should probably reboot to get the font loaded.
 
 3. Configure your VSCode settings.
 
    ```json
    {
-      "editor.fontFamily": "Fira Code",
+     "editor.fontFamily": "Fira Code"
    }
    ```
 
@@ -41,8 +42,8 @@ To use it with VSCode, you need to:
 
    ```json
    {
-      "editor.fontFamily": "Fira Code",
-      "editor.fontLigatures": true,
+     "editor.fontFamily": "Fira Code",
+     "editor.fontLigatures": true
    }
    ```
 

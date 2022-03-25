@@ -1,31 +1,41 @@
 import PreDark from "./PreDark";
 import PreLight from "./PreLight";
 
-const P = ({ children }) => <p className="my-5 first:mt-0 last:mb-0">{children}</p>;
+const P = ({ children }) => (
+  <p className="my-5 first:mt-0 last:mb-0">{children}</p>
+);
 
 const H1 = ({ children }) => (
-  <h1 className="text-4xl font-semibold my-8 first:mt-0 last:mb-0">{children}</h1>
+  <h1 className="my-8 text-4xl font-semibold first:mt-0 last:mb-0">
+    {children}
+  </h1>
 );
 
 const H2 = ({ children }) => (
-  <h2 className="text-2xl font-semibold my-8 first:mt-0 last:mb-0">{children}</h2>
+  <h2 className="my-8 text-2xl font-semibold first:mt-0 last:mb-0">
+    {children}
+  </h2>
 );
 
 const H3 = ({ children }) => (
-  <h3 className="text-lg font-semibold my-8 first:mt-0 last:mb-0">{children}</h3>
+  <h3 className="my-8 text-lg font-semibold first:mt-0 last:mb-0">
+    {children}
+  </h3>
 );
 
 const Ol = ({ children }) => <ol className="list-decimal">{children}</ol>;
 
 const Ul = ({ children }) => <ul className="list-disc">{children}</ul>;
 
-const Li = ({ children }) => <li className="my-5 first:mt-0 last:mb-0">{children}</li>;
+const Li = ({ children }) => (
+  <li className="my-5 first:mt-0 last:mb-0">{children}</li>
+);
 
 const Blockquote = ({ children }) => {
   return (
     <div className="relative">
-      <blockquote className="text-sm italic bg-paper-light dark:bg-night-light shadow-sm rounded-sm p-5 pt-1 my-5">
-        <span className="text-3xl text-pencil dark:text-moonlight select-none absolute top-0 left-0 transform -translate-y-1/4">
+      <blockquote className="my-5 rounded-sm bg-paper-light p-5 pt-1 text-sm italic shadow-sm dark:bg-night-light">
+        <span className="absolute top-0 left-0 -translate-y-1/4 transform select-none text-3xl text-pencil dark:text-moonlight">
           “
         </span>
         {children}
@@ -35,8 +45,8 @@ const Blockquote = ({ children }) => {
 };
 
 const Table = ({ children }) => (
-  <div className="overflow-x-scroll shadow-sm my-8 first:mt-0 last:mb-0">
-    <table className="text-sm bg-paper-light dark:bg-night-light min-w-full whitespace-nowrap">
+  <div className="my-8 overflow-x-scroll shadow-sm first:mt-0 last:mb-0">
+    <table className="min-w-full whitespace-nowrap bg-paper-light text-sm dark:bg-night-light">
       {children}
     </table>
   </div>
@@ -49,20 +59,20 @@ const Tbody = ({ children }) => <tbody>{children}</tbody>;
 const Tr = ({ children }) => <tr>{children}</tr>;
 
 const Th = ({ children }) => (
-  <th className="py-2.5 px-5 align-top text-left border border-gray-100 dark:border-gray-900">
+  <th className="border border-gray-100 py-2.5 px-5 text-left align-top dark:border-gray-900">
     {children}
   </th>
 );
 
 const Td = ({ children }) => (
-  <td className="py-2.5 px-5 border border-gray-100 dark:border-gray-900">
+  <td className="border border-gray-100 py-2.5 px-5 dark:border-gray-900">
     {children}
   </td>
 );
 
 const A = ({ children, href }) => (
   <a
-    className="text-blue-600 dark:text-yellow-400 hover:text-blue-700 dark:hover:text-yellow-300 break-words"
+    className="break-words text-blue-600 hover:text-blue-700 dark:text-yellow-400 dark:hover:text-yellow-300"
     href={href}
     target="_blank"
     rel="noopener noreferrer"

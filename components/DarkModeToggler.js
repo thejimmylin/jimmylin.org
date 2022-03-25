@@ -14,7 +14,7 @@ const DarkModeToggler = ({ useIsDark }) => {
     >
       <div
         key={isDark}
-        className="text-xl animate-risein-300-100 transition-transform transform"
+        className="transform animate-risein-300-100 text-xl transition-transform"
       >
         {isDark ? (
           <span>

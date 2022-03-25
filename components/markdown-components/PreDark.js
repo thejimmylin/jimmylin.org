@@ -115,7 +115,7 @@ const PreDark = ({ children }) => {
   const language = matches?.groups?.lang || "";
   return (
     <div className="relative mb-5">
-      <span className="text-xs italic bg-night-light rounded-sm pl-2.5 pr-3.5 pt-0.5 absolute top-0 left-0 transform -translate-y-1/2 text-pencil select-none">
+      <span className="absolute top-0 left-0 -translate-y-1/2 transform select-none rounded-sm bg-night-light pl-2.5 pr-3.5 pt-0.5 text-xs italic text-pencil">
         {language ? language.toUpperCase() : "Code"}
       </span>
       <Highlight
@@ -126,7 +126,7 @@ const PreDark = ({ children }) => {
       >
         {({ style, tokens, getLineProps, getTokenProps }) => (
           <pre
-            className="p-5 text-sm overflow-x-scroll rounded-sm shadow-sm"
+            className="overflow-x-scroll rounded-sm p-5 text-sm shadow-sm"
             style={style}
           >
             {tokens.map((line, i) => (

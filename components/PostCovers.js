@@ -40,11 +40,11 @@ const PostCover = ({ post, index }) => {
   return (
     <div
       key={post.slug}
-      className="bg-paper-light dark:bg-night-light transition-bg my-8 rounded-md shadow-sm"
+      className="my-8 rounded-md bg-paper-light shadow-sm transition-bg dark:bg-night-light"
     >
       <article className="p-8">
         {post.frontmatter.isDraft && (
-          <span className="text-pencil dark:text-moonlight text-xs">
+          <span className="text-xs text-pencil dark:text-moonlight">
             This is a draft that may be updated at any time.
           </span>
         )}
@@ -78,9 +78,11 @@ const PostCover = ({ post, index }) => {
 const SorryNoPostCover = () => {
   const index = 0;
   return (
-    <div className="bg-paper-light dark:bg-night-light transition-bg my-8 rounded-md shadow-sm">
+    <div className="my-8 rounded-md bg-paper-light shadow-sm transition-bg dark:bg-night-light">
       <article className="p-8">
-        <h2 className={classNames([getTitleClassNames(index), "mb-5"])}>Sorry, no posts found.</h2>
+        <h2 className={classNames([getTitleClassNames(index), "mb-5"])}>
+          Sorry, no posts found.
+        </h2>
         <p className="mb-5 text-sm text-pencil dark:text-moonlight">
           Maybe you want to try searching for something else?
         </p>
