@@ -5,49 +5,6 @@ import PostLayout from "../components/PostLayout";
 import Footer from "../components/Footer";
 import { H1, P } from "../components/markdown-components";
 
-const EmailInstruction = ({ value, emailEdited }) => {
-  if (!emailEdited) {
-    return null;
-  }
-  if (!value) {
-    return <div className="text-xs text-red-500">Please provide an email.</div>;
-  }
-  const emailPattern = /^\S+@\S+\.\S+$/;
-  const isEmail = emailPattern.test(value);
-  if (!isEmail) {
-    return (
-      <div className="text-xs text-red-500">Please provide a valid email.</div>
-    );
-  }
-  return <div className="text-xs text-green-500">Good!</div>;
-};
-
-const MessageInstruction = ({ value, messageEdited }) => {
-  if (!messageEdited) {
-    return null;
-  }
-  if (!value) {
-    return (
-      <div className="text-xs text-red-500">Please provide some messages.</div>
-    );
-  }
-  return <div className="text-xs text-green-500">Good!</div>;
-};
-
-const SubmitInstruction = ({ isSent, setIsSent }) => {
-  if (isSent) {
-    setTimeout(() => {
-      setIsSent(false);
-    }, 1500);
-    return (
-      <div className="animate-fadeout-1500-0 text-xs text-green-500 opacity-100">
-        Successfully sent!
-      </div>
-    );
-  }
-  return null;
-};
-
 const Contact = ({ useIsDark }) => {
   const [email, setEmail] = useState("");
   const [emailEdited, setEmailEdited] = useState(false);
@@ -143,6 +100,49 @@ const Contact = ({ useIsDark }) => {
       <Footer />
     </>
   );
+};
+
+const EmailInstruction = ({ value, emailEdited }) => {
+  if (!emailEdited) {
+    return null;
+  }
+  if (!value) {
+    return <div className="text-xs text-red-500">Please provide an email.</div>;
+  }
+  const emailPattern = /^\S+@\S+\.\S+$/;
+  const isEmail = emailPattern.test(value);
+  if (!isEmail) {
+    return (
+      <div className="text-xs text-red-500">Please provide a valid email.</div>
+    );
+  }
+  return <div className="text-xs text-green-500">Good!</div>;
+};
+
+const MessageInstruction = ({ value, messageEdited }) => {
+  if (!messageEdited) {
+    return null;
+  }
+  if (!value) {
+    return (
+      <div className="text-xs text-red-500">Please provide some messages.</div>
+    );
+  }
+  return <div className="text-xs text-green-500">Good!</div>;
+};
+
+const SubmitInstruction = ({ isSent, setIsSent }) => {
+  if (isSent) {
+    setTimeout(() => {
+      setIsSent(false);
+    }, 1500);
+    return (
+      <div className="animate-fadeout-1500-0 text-xs text-green-500 opacity-100">
+        Successfully sent!
+      </div>
+    );
+  }
+  return null;
 };
 
 export default Contact;
