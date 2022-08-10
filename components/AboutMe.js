@@ -33,61 +33,6 @@ const AboutMe = () => {
         I have five years of programming experience, mostly in{" "}
         <A href="https://www.python.org/">Python</A> and web development.
       </P>
-      <H1>Education</H1>
-      <div className="mb-5 flex items-center justify-between gap-8">
-        <div>
-          <div>
-            <A href="https://www.ntu.edu.tw/">NTU</A>, Taipei. Mech Eng.
-          </div>
-          <div className="text-sm">Sep. 2011 - Jun. 2016</div>
-        </div>
-        <div className="xs:w-36 xs:h-36 relative mb-5 h-24 w-24">
-          <Image
-            src={ntu}
-            alt="ntu"
-            layout="fill"
-            objectFit="contain"
-            priority={true}
-          />
-        </div>
-      </div>
-      <H1>Experience</H1>
-      <div className="mb-5 flex items-center justify-between gap-8">
-        <div>
-          <div>
-            <A href="https://shopee.tw/">Shopee Taiwan</A>
-          </div>
-          <div className="text-sm">Oct. 2021 -</div>
-          <P>Backend engineer.</P>
-        </div>
-        <div className="xs:w-36 xs:h-36 relative mb-5 h-24 w-24">
-          <Image
-            src={shopee}
-            alt="shopee"
-            layout="fill"
-            objectFit="contain"
-            priority={true}
-          />
-        </div>
-      </div>
-      <div className="mb-5 flex items-center justify-between gap-8">
-        <div>
-          <div>
-            <A href="https://www.chief.com.tw/">Chief Telecom</A>
-          </div>
-          <div className="text-sm">Jun. 2017 - Jun. 2021</div>
-          <P>Cloud service engineer.</P>
-        </div>
-        <div className="xs:w-36 xs:h-36 relative mb-5 h-24 w-24">
-          <Image
-            src={chief}
-            alt="chief"
-            layout="fill"
-            objectFit="contain"
-            priority={true}
-          />
-        </div>
-      </div>
       <H1>Skills</H1>
       <P>Here are my skills and the techniques I use:</P>
       <H2>Python</H2>
