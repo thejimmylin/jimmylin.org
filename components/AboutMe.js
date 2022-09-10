@@ -130,7 +130,7 @@ const AboutMe = () => {
       </P>
       <H1>Portfolios</H1>
       <H2>
-        <A href="https://github.com/j3ygh/jimmylin.org">jimmylin.org</A>
+        <A href="https://github.com/thejimmylin/jimmylin.org">jimmylin.org</A>
       </H2>
       <P>My personal blog, mainly built with Next.js.</P>
       <div className="mb-8">
@@ -163,7 +163,7 @@ const AboutMe = () => {
         files and use them in <A href="https://nextjs.org">Next.js</A>.
       </P>
       <H2>
-        <A href="https://github.com/j3ygh/ctdb">ctdb</A>
+        <A href="https://github.com/thejimmylin/ctdb">ctdb</A>
       </H2>
       <P>A web UI of many reusable applications, mainly built with Django.</P>
       <div className="mb-8">

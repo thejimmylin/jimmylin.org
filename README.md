@@ -6,18 +6,18 @@ A personal website/blog about me, built with `Next.js` and `MDX`.
 
 ## Screenshots
 
-![index](https://github.com/j3ygh/jimmylin.org/blob/main/.docs/images/index.png)
+![index](https://github.com/thejimmylin/jimmylin.org/blob/main/.docs/images/index.png)
 
-![post1](https://github.com/j3ygh/jimmylin.org/blob/main/.docs/images/post1.png)
+![post1](https://github.com/thejimmylin/jimmylin.org/blob/main/.docs/images/post1.png)
 
-![post2](https://github.com/j3ygh/jimmylin.org/blob/main/.docs/images/post2.png)
+![post2](https://github.com/thejimmylin/jimmylin.org/blob/main/.docs/images/post2.png)
 
 ## Installation
 
 You can install `jimmylin.org` with `npm`.
 
 ```
-git clone https://github.com/j3ygh/jimmylin.org
+git clone https://github.com/thejimmylin/jimmylin.org
 cd jimmylin.org
 npm ci
 ```
@@ -32,7 +32,7 @@ npm run dev
 
 ## Contributing
 
-1. Fork it (<https://github.com/j3ygh/jimmylin.org/fork>)
+1. Fork it (<https://github.com/thejimmylin/jimmylin.org/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
@@ -44,4 +44,4 @@ Distributed under the [MIT](https://choosealicense.com/licenses/mit/) license. S
 
 ## Authors
 
-- [@j3ygh](https://www.github.com/j3ygh)
+- [@thejimmylin](https://www.github.com/thejimmylin)

@@ -9,7 +9,7 @@ const Footer = () => {
           <p className="text-sm">contact@jimmylin.org</p>
           <p className="flex gap-2 text-3xl">
             <a
-              href="https://github.com/j3ygh"
+              href="https://github.com/thejimmylin"
               target="_blank"
               rel="noreferrer"
               className="transform hover:scale-110"
@@ -17,7 +17,7 @@ const Footer = () => {
               <i className="bi bi-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/jimmy-lin-5779a61b5/"
+              href="https://www.linkedin.com/in/thejimmylin"
               target="_blank"
               rel="noreferrer"
               className="transform hover:scale-110"
@@ -25,7 +25,7 @@ const Footer = () => {
               <i className="bi bi-linkedin"></i>
             </a>
             <a
-              href="https://www.facebook.com/j3y.fb"
+              href="https://www.facebook.com/thejimmylin"
               target="_blank"
               rel="noreferrer"
               className="transform hover:scale-110"
