@@ -65,11 +65,9 @@ const HeroBanner = ({ useIsDark, windowScrollY, headerRef }) => {
               My posts
             </a>
           </Link>
-          <Link href="/contact" passHref>
-            <button className="text-md m-1 h-12 w-32 animate-fadein-1000-800 border-2 border-light text-light hover:border-white hover:text-white focus:outline-none">
-              Contact
-            </button>
-          </Link>
+          <button onClick={scrollIntoHeader} className="text-md m-1 h-12 w-32 animate-fadein-1000-800 border-2 border-light text-light hover:border-white hover:text-white focus:outline-none">
+            About me
+          </button>
         </div>
       </div>
       <div className="absolute left-1/2 top-4/5 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center">

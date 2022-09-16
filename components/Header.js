@@ -53,11 +53,6 @@ const Header = ({ useIsDark, headerRef }) => {
                 <a>Posts</a>
               </Link>
             </li>
-            <li className={contactClassName}>
-              <Link href="/contact">
-                <a>Contact</a>
-              </Link>
-            </li>
             <li className="my-5 ml-auto flex items-center">
               <DarkModeToggler useIsDark={useIsDark} />
             </li>
